@@ -17,5 +17,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy the rest of the application code to the container
 COPY . .
 
+EXPOSE 5500
+
 # Set the default command to run the application
 CMD ["python", "app.py"]
