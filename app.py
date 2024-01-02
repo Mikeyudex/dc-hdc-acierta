@@ -17,14 +17,15 @@ def home():
 def get_data():
     if request.method == "GET":
         try:
-            #document = request.args.get("document")
-            #lastname = request.args.get("lastname")
-            """ if not lastname or not document:
+            document = request.args.get("document")
+            lastname = request.args.get("lastname")
+            if not lastname or not document:
                 return make_response(
                     jsonify({"success": False, "data": [], "error": 'Los parámetros document y lastname son obligatorios.'}),
                     400
-                ) """
-            response_data = getDataExperian()
+                )
+            response_data = getDataExperian(document=document, lastname=lastname)
+            #response_data = {'success': True, 'data': []}
             return jsonify(response_data)
 
         except Exception as error_response:
