@@ -44,15 +44,15 @@ def getDataExperian(document:str = '74244054', lastname:str='GUARIN'):
 
 
     # usuario OKTA sin dominio y contraseña
-    okta_user = UsernameToken(username=USUARIO_OKTA, password=CLAVE_OKTA)
+    okta_user = UsernameToken(username="2-901582748.5@datacredito.com.co", password="OktaGalilea#2024")
 
     # Parametros Firma
     signature = Signature(private_key_filename, public_key_filename)
     transport = Transport(session=session)
-    URL = URL_WS_ACIERTA
+    URL = "https://servicesesb.datacredito.com.co/wss/dhws3/services/DHServicePlus?wsdl"
 
-    ws_clave = WS_CLAVE
-    ws_usuario = WS_USUARIO
+    ws_clave = "68JHN"
+    ws_usuario = "901582748"
 
     client = Client(URL, wsse=CustomSignature([okta_user, signature]), transport=transport,)
     client.service._binding_options["address"] = URL.replace('?wsdl', '')
