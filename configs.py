@@ -5,7 +5,7 @@ CONFIGWS = {
     "USUARIO_OKTA_DEV": "2-901582748",
     "USUARIO_OKTA_PROD": "2-901582748.5@datacredito.com.co",
     "CLAVE_OKTA_DEV": "Galilea2023",
-    "CLAVE_OKTA_PROD": "OktaGalilea#2024",
+    "CLAVE_OKTA_PROD": "OktaGalileaHDC#2024",
     "URL_SERVICE_ACIERTA_DEV": "https://demo-servicesesb.datacredito.com.co/wss/dhws3/services/DHServicePlus?wsdl",
     "URL_SERVICE_ACIERTA_PROD": "https://servicesesb.datacredito.com.co/wss/dhws3/services/DHServicePlus?wsdl",
     "WS_CLAVE_DEV": "57PFH",
