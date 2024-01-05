@@ -66,23 +66,23 @@ def getDataExperian(document:str = '74244054', lastname:str='GUARIN'):
         'usuario': ws_usuario,
     }
 
-    try:
-        response_service = client.service.consultarHC2(solicitud=request_data)
+#try:
+    response_service = client.service.consultarHC2(solicitud=request_data)
 
-        #print(response_service, '\n')
-        # CONVERSION XML A JSON
-        response_service = response_service.replace('&lt;', '<')
-        response_service = helpers.serialize_object(response_service)
-        response_service = xmltodict.parse(response_service)
-        """ response_service = json.dumps(
-            response_service, ensure_ascii=False, indent=4) """
-        #print('Consulta OK - JSON\n', response_service)
-        return {"success": True, "data": response_service}
-        
-    except Exception as e:
-        print(e)
-        return {
-            'success': False,
-            'data': [],
-            'error': e
-        }
+    #print(response_service, '\n')
+    # CONVERSION XML A JSON
+    response_service = response_service.replace('&lt;', '<')
+    response_service = helpers.serialize_object(response_service)
+    response_service = xmltodict.parse(response_service)
+    """ response_service = json.dumps(
+        response_service, ensure_ascii=False, indent=4) """
+    #print('Consulta OK - JSON\n', response_service)
+    return {"success": True, "data": response_service}
+    
+""" except Exception as e:
+    print(e)
+    return {
+        'success': False,
+        'data': [],
+        'error': e
+    } """
