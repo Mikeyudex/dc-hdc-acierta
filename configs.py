@@ -3,7 +3,7 @@ ENV_SERVICE = "PROD"
 APP = "API DATACREDITO - GALILEA - HDC-ACIERTA"
 CONFIGWS = {
     "USUARIO_OKTA_DEV": "2-901582748",
-    "USUARIO_OKTA_PROD": "2-901582748.5@datacredito.com.co",
+    "USUARIO_OKTA_PROD": "2-901582748.5",
     "CLAVE_OKTA_DEV": "Galilea2023",
     "CLAVE_OKTA_PROD": "OktaGalileaHDC#2024",
     "URL_SERVICE_ACIERTA_DEV": "https://demo-servicesesb.datacredito.com.co/wss/dhws3/services/DHServicePlus?wsdl",
