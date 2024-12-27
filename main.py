@@ -36,11 +36,11 @@ def getDataExperian(document:str = '74244054', lastname:str='GUARIN'):
 
     session = Session()
     # Parametros conexion Keystore en extension .pem
-    session.cert = './certs/keypair.pem'
+    session.cert = './certs/2025/keypair_2025.pem'
 
     # Clave privada del ertificado y el certificado SSL en archivos independiente
-    private_key_filename = './certs/galilea_dc_co.key.txt'
-    public_key_filename = './certs/www_galilea_co.txt'
+    private_key_filename = './certs/2025/private.key.txt'
+    public_key_filename = './certs/2025/www_galilea_co.txt'
 
 
     # usuario OKTA sin dominio y contraseña
